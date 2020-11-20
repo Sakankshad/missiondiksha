@@ -361,9 +361,20 @@ img {
   width: 100%;
 }
 #mu-slider .mu-slider-single .mu-slider-img figure img {
-  width: 100%;
+  width: auto;
   height: 100%;
+  vertical-align: middle;
+  object-position: center;
 }
+
+@media (min-width: 1230px) {
+  #mu-slider .mu-slider-single .mu-slider-img figure img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+}
+
 #mu-slider .mu-slider-single .mu-slider-content {
   color: #fff;
   position: absolute;
@@ -2504,4 +2515,14 @@ img {
   .navbar-brand img {
   height: 46px;
 }
+}
+
+@font-face {
+          font-family: hobo;
+          src: url(../fonts/hobostd.otf);
+        }
+
+
+.mu-slider-img {
+  height: 650px !important;
 }
