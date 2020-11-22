@@ -58,9 +58,25 @@ Author URI : http://www.markups.io/
 }
 
 #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
-  color: #01bafd;
-  border: 1px solid #01bafd;
+  color: #fff;
+  /*border: 1px solid #01bafd;*/
+  border-radius: 5px;
+  background: #01bafd;
+  transition: 0.5s;
 }
+
+#mu-features .mu-features-area .mu-features-content .mu-single-feature h4 {
+  font-weight: bold;
+}
+
+#mu-features .mu-features-area .mu-features-content .mu-single-feature {
+  text-align: center;
+}
+
+#mu-features .mu-features-area .mu-features-content .mu-single-feature:hover span {
+  background: #213766;
+}
+
 #mu-features .mu-features-area .mu-features-content .mu-single-feature a:hover, #mu-features .mu-features-area .mu-features-content .mu-single-feature a:focus {
   color: #01bafd;
   border-color: #01bafd;
