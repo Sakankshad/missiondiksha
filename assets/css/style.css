@@ -118,10 +118,13 @@ img {
  HEADER SECTION
 ====================*/
 #mu-header {
-  background-color: #f8f8f8;
+  background-color: #213766;
   display: inline;
   float: left;
   width: 100%;
+}
+#mu-header span, #mu-header i {
+  color: #fff;
 }
 #mu-header .mu-header-area {
   display: inline;
