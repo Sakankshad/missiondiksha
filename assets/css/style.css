@@ -437,7 +437,7 @@ img {
   width: 100%;
 }
 #mu-service .mu-service-area .mu-service-single {
-  background-color: #01bafd;
+  background-color: #213766;
   color: #fff;
   display: inline;
   float: left;
@@ -446,10 +446,10 @@ img {
   width: 33.33%;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(2) {
-  background-color: #2ecc71;
+  background-color: #01bafd;
 }
 #mu-service .mu-service-area .mu-service-single:nth-child(3) {
-  background-color: #45a0de;
+  background-color: #213766;
 }
 #mu-service .mu-service-area .mu-service-single span {
   font-size: 30px;
@@ -970,7 +970,7 @@ img {
   margin-bottom: 0;
   position: relative;
 }
-#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before {
+#mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote:before, {
   content: '\f10d';
   color: #fff;
   font-family: fontAwesome;
@@ -979,6 +979,18 @@ img {
   position: absolute;
   top: 0;
 }
+
+.founder-says .founder-testimonial:before {
+  content: '\f10d';
+  color: #fff;
+  font-family: fontAwesome;
+  font-style: italic;
+  left: 2%;
+  position: absolute;
+  /*padding: 5px;*/
+  /*top: 0;*/
+}
+
 #mu-testimonial .mu-testimonial-area .mu-testimonial-content .mu-testimonial-item .mu-testimonial-quote blockquote p {
   color: #fff;
   font-size: 16px;
@@ -2544,16 +2556,25 @@ img {
 }
 
 
-#mu-abtus-counter .fa, #mu-abtus-counter span {
+#mu-abtus-counter span {
 -webkit-text-stroke: 1px #213766;
+font-weight: bold !important;
 }
+
+
 
 /*#mu-abtus-counter p {
 -webkit-text-stroke: 0.5px #213766;
 }*/
 
-#mu-abtus-counter span {
+/*#mu-abtus-counter span {
   font-weight: bold !important;
+}
+*/
+#mu-abtus-counter .fa {
+ -webkit-text-stroke: 0px #213766 !important;
+ font-weight: normal !important; 
+ color: #213766 !important;
 }
 
 #mu-abtus-counter p {
@@ -2982,7 +3003,8 @@ h1 {
     }
 
 @media (max-width: 992px) {
-  .book-section p, .book-section h2, .about-section p, .about-section h2, .about-section h4 {
+  .book-section p, .book-section h2, .about-section p, .about-section h2, .about-section h4, .about-landing h2, .about-landing p, .founder-says p, 
+  .founder-says h2 {
     text-align: center;
   }
 
