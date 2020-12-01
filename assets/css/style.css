@@ -3008,6 +3008,10 @@ h1 {
     text-align: center;
   }
 
+  .about-landing p {
+    margin-top: 30px;
+  }
+
   .about-section .row {
     padding-bottom: 0 !important;
   }
