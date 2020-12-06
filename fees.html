@@ -36,6 +36,61 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style type="text/css">
+      /*.price_section h1{
+        color: #3498db;
+        margin-top: 55px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }*/
+      sup {
+        text-transform: lowercase !important;
+      }
+
+      .pricing-table{
+        margin-top: 65px;
+      }
+      .pricing-box { margin-bottom: 70px; float: left;}
+      .pricing-box ul { padding: 0; margin: 0; list-style: none; position: relative;cursor:pointer;border: solid 1px #ddd; z-index: 1;}
+
+      .pricing-box ul:hover .subscription-price{
+        background: #213766;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;  
+      }
+      .pricing-box ul li { text-align: center; border-bottom: solid 1px #ddd; line-height: 40px; background: #fff;}
+
+      .pricing-box li.plan-title { text-transform: uppercase; line-height: 50px; font-size: 16px; font-weight: bold;} 
+      .pricing-box li.subscription-price { background: #01bafd; color: #fff; position: relative; border-bottom: none; font-size: 16px;}
+      .pricing-box li.subscription-price .currency {position: absolute; top: 15px; left: 50%; margin-left: -70px; font-size: 18px;}
+      .pricing-box li.subscription-price .price { font-size: 70px; font-weight: 600; font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+      line-height: 106px;}
+      .pricing-box li.sing-up {position: absolute; left: 50%; bottom: -22.5px; margin-left: -79px; background: #fff; 
+      line-height: 45px !important;}
+      .pricing-box li.sing-up a { color: #000; text-transform: uppercase; padding: 11px 38px; line-height: 42px; border: solid 1px #ddd; font-weight: bold;}
+      .pricing-box li.sing-up a:hover { background: #01bafd; border: solid 1px #01bafd; color: #fff;}
+
+      .pricing-box.featured {}
+      .pricing-box.featured li.plan-title { line-height: 61px;}
+      .pricing-box.featured ul {border: solid 2px #213766; z-index: 2; box-shadow: 0px 0px 15px 5px rgba(0,0,0,.11);}
+
+      .last { padding-bottom: 20px;}
+
+      .pricing-box.featured ul li { line-height: 45px;}
+
+      .pricing-box.featured li.subscription-price { background: #213766; }
+      .pricing-box.featured li.subscription-price .price { line-height: 130px; font-size: 85px;}
+      .pricing-box.featured li.subscription-price .currency { top: 25px; margin-left: -80px;}
+      .sing-up{
+        border-bottom: none;
+      }
+      .pricing-box.featured li.sing-up a { background: #213766; color: #fff; border: solid 1px #213766;}
+      .pricing-box.featured li.sing-up a:hover { background: #01bafd; border: solid 1px #01bafd; color: #fff;}
+    </style>
+
   </head>
   <body> 
 
@@ -106,25 +161,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li>            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="index.html">Course Archive</a></li>                
-                <li><a href="index.html">Course Detail</a></li>                
-              </ul>
-            </li>           
-            <li><a href="index.html">Gallery</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="index.html">Blog Archive</a></li>                
-                <li><a href="index.html">Blog Single</a></li>                
-              </ul>
-            </li>            
-            <li><a href="index.html">Contact</a></li>
-            <li><a href="index.html">404 Page</a></li>               
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About Us</a></li> 
+            <li class="active"><a href="fees.html">Fees</a></li> 
+            <li><a href="contact.html">Contact</a></li>            
           </ul>                     
         </div><!--/.nav-collapse -->        
       </div>     
@@ -167,131 +207,180 @@
  </section>
  <!-- End breadcrumb -->
 
-  <section class="about-landing" style="background: #cafbff; padding: 75px 0; clear: both;">
-    <div class="container">
-      <div class="row" style="display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;">
-        <div class="col-lg-6" style="margin: auto;">
-          <img src="assets/img/Online-teaching-and-learning.jpg" width="100%">
-        </div>
-        <div class="col-lg-6" style="margin: auto;">
-          <h2 style="color: #213766">Book Free Trial Classes Now!</h2>
-          </br>
-          </br>
-          <p style="color: #213766">
-            &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            </br>
-            </br>
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            </br>
-            </br>
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Start features section -->
-  <section id="mu-features">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="mu-features-area">
-            <!-- Start Title -->
-            <div class="mu-title">
-              <h2>How we Function</h2>
-            </div>
-            <!-- End Title -->
-            <!-- Start features content -->
-            <div class="mu-features-content">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-lightbulb-o"></span>
-                    <h4>IQ Evaluation</h4>
-                    <p>Personal tuitions with individual attention to each. </p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-laptop"></span>
-                    <h4>Adaptive Tuitions</h4>
-                    <p>Well qualified and experienced teachers of all subjects.</p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-user" style="padding: 10px 20px;"></span>
-                    <h4>Unmatched Attention</h4>
-                    <p>Personal doubt clearance classes on every topic regularly.</p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-question" style="padding: 10px 20px;"></span>
-                    <h4>Doubt Clearance</h4>
-                    <p>Building problem solving, technical and communication skills</p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-clipboard"></span>
-                    <h4>Revision</h4>
-                    <p>Clear concepts and regular practice bring excellent results.</p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-certificate" style="padding: 10px 18px;"></span>
-                    <h4>Regular Tests</h4>
-                    <p>Good marks and personal growth builds self-confidence.</p>
-                    <!-- <a href="#">Read More</a> -->
-                  </div>
+ <div class="price_area">
+  <div class="container">
+    <div class="row">
+      <div class="price_section">
+          <!-- <h1>Price section</h1> -->
+              <div class="col-md-12">
+                <div class="pricing-table">
+                  <div class="col-md-4 col-sm-4 col-xs-12 pricing-box first wow bounceInUp animated">
+                    <ul>
+                      <li class="plan-title">
+                        Class 1<sup>st</sup> to 4<sup>th</sup>
+                      </li>
+                      <li class="subscription-price oswald">
+                        <span class="currency oswald">$</span>
+                        <span class="price">1.5</span>
+                        / hr
+                      </li>
+                      <li class="ptop10">
+                        Live Tutoring
+                      </li>
+                      <li>
+                        Complete Syllabus
+                      </li>
+                      <li>
+                        Chapter Revisions
+                      </li>
+                      <li>
+                        Regular Tests
+                      </li>
+                      <li>
+                        Good Grades
+                      </li>
+                      <li>
+                        Skill Development
+                      </li>
+                      <li class="last border-none pbottom40">
+                        Boost Confidence
+                      </li>
+                      <li class="sing-up">
+                        <a href="#book" class="animate">Free Trial</a>
+                      </li>
+                    </ul>
+                  </div><!-- end pricing-box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 pricing-box second featured wow bounceInUp animated">
+                    <ul>
+                      <li class="plan-title">
+                        Class 4<sup>th</sup> to 8<sup>th</sup>
+                      </li>
+                      <li class="subscription-price oswald">
+                        <span class="currency oswald">$</span>
+                        <span class="price">1.9</span>
+                        / hr
+                      </li>
+                      <li class="ptop10">
+                        Live Tutoring
+                      </li>
+                      <li>
+                        Complete Syllabus
+                      </li>
+                      <li>
+                        Doubt Classes
+                      </li>
+                      <li>
+                        Practice Sets
+                      </li>
+                      <li>
+                        Regular Tests
+                      </li>
+                      <li>
+                        Good Grades
+                      </li>
+                      <li class="last border-none pbottom40">
+                        Boost Confidence
+                      </li>
+                      <li class="sing-up">
+                        <a href="#book" class="animate">Free Trial</a>
+                      </li>
+                    </ul>
+                  </div><!-- end pricing-box -->
+                  <div class="col-md-4 col-sm-4 col-xs-12 pricing-box last wow bounceInUp animated">
+                    <ul>
+                      <li class="plan-title">
+                        Class 9<sup>th</sup> to 12<sup>th</sup>
+                      </li>
+                      <li class="subscription-price oswald">
+                        <span class="currency oswald">$</span>
+                        <span class="price">2.9</span>
+                        / hr
+                      </li>
+                      <li class="ptop10">
+                        Live Tutoring
+                      </li>
+                      <li>
+                        Complete Syllabus
+                      </li>
+                      <li>
+                        Doubt Classes
+                      </li>
+                      <li>
+                        Practice Sets
+                      </li>
+                      <li>
+                        Regular Tests
+                      </li>
+                      <li>
+                        Good Grades
+                      </li>
+                      <li class="last border-none pbottom40">
+                        Boost Confidence
+                      </li>
+                      <li class="sing-up">
+                        <a href="#book" class="animate">Free Trial</a>
+                      </li>
+                    </ul>
+                  </div><!-- end pricing-box -->
                 </div>
               </div>
-            </div>
-            <!-- End features content -->
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <section class="about-landing" style="background: #cafbff; padding: 75px 0; clear: both; border-top: 4px dashed #213766; border-bottom: 4px dashed #213766;">
+    <div class="container">
+      <div class="row" style="display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;">
+        <div class="col-lg-8" style="margin: auto;">
+          <p style="color: #213766">
+            <span style="font-weight: bold; font-size: 25px;">Are you of Indian Origin? Glad, we are too!</span>
+            </br>
+            </br>
+            Count your discount with 30% off on Indian Nationality and make your learning more affordable, cultural and valued
+          </p>
+        </div>
+        <div class="col-lg-4" style="margin: auto;">
+          <div style="padding: 10px 20px; border: 4px dashed #213766; border-radius: 10px; font-weight: bold; color: #213766; display: flex; margin: auto; display: table-cell;">
+            30% OFF for Indian Students
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- End features section -->
 
-  <section class="founder-says" style="background: #213766; padding: 75px 0; clear: both;">
+  <section class="book-section">
     <div class="container">
-      <!-- <div class="mu-title">
-        <h2>Founder Says</h2>
-      </div> -->
-      <div class="row" style="display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;">
-        <div class="col-lg-6" style="margin: auto;">
-          <img src="assets/img/ceo.png" width="100%">
-        </div>
-        <div class="col-lg-6" style="margin: auto;">
-          <h2 style="color: wheat; text-align: center;">Founder Says</h2>
-          <!-- </br> -->
+      <div class="row" id="book" style="display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 75px 10px;">
+        <div class="col-lg-6" style="margin: auto; padding: 25px 0;">
+          <h2 style="color: #213766">Want your child to excel in academics? Here's a chance!</h2>
           </br>
-          <div class="founder-testimonial">
-            <p style="color: wheat; text-align: center;">
-              </br>
-              <!-- <span style="font-size: 50px; font-weight: bold; content: '\f10d'; font-family: fontAwesome; font-style: italic;">"</span> -->
-              &Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <!-- <span style="font-size: 50px; font-weight: bold;">"</span> -->
-            </p>
-          </div>
+          </br>
+          <p>
+            Keep your child a step ahead of school with personalised tutoring. One to one tuition and special attention to every kid makes the learning much more clear and understandable along with practical approach of knowledge.
+            </br>
+            </br>
+            Join the courses and unlock the <span style="font-weight: bold;"> first 15 days trial for free.</span>
+          </p>
+        </div>
+        <div class="col-lg-6" style="margin: auto; padding: 25px 0;">
+          <form action="#" class="booking-done" id="booking-done">
+            <div>
+              <input type="text" name="Name" value="" placeholder="Name">
+            </div>
+            <div>
+              <input type="number" name="Number" value="" placeholder="Mobile Number">
+            </div>
+            <div>
+              <input type="email" name="Email" value="" placeholder="Email Id">
+            </div>
+            <div></div>
+              <input style="width: 150px !important; background: #213766" type="submit" value="Book Now">
+            </div>
+          </form>
         </div>
       </div>
     </div>
